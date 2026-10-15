@@ -25,13 +25,13 @@ spec:
         livenessProbe:
           httpGet:
             path: /
-            port: 8080   # <- BUG: ancien port, probe jamais satisfaite
+            port: 8080 
           initialDelaySeconds: 3
           periodSeconds: 5
         readinessProbe:
           httpGet:
             path: /
-            port: 8080   # <- même bug côté readiness
+            port: 8080
           initialDelaySeconds: 3
           periodSeconds: 5
 EOF
