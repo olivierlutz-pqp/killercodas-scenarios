@@ -1,0 +1,25 @@
+{
+  "title": "Helm : release bloquée après un upgrade raté",
+  "description": "Un helm upgrade a échoué en plein milieu. Diagnostique et débloque la release.",
+  "difficulty": "intermediate",
+  "tags": ["kubernetes", "helm", "troubleshooting"],
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Diagnostiquer et débloquer la release",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
