@@ -10,9 +10,9 @@ RESTARTS=$(kubectl -n kube-system get pods -l "$CNI_LABEL" \
   -o jsonpath='{.items[0].status.containerStatuses[0].restartCount}' 2>/dev/null)
 
 if [[ "$RESTARTS" -eq 0 && "$LIMIT" != "20Mi" ]]; then
-  echo "OK: CNI stable (0 redémarrage), limite mémoire corrigée"
+  echo "OK: incident résolu"
   exit 0
 else
-  echo "KO: CNI instable — redémarrages: ${RESTARTS:-inconnu}, limite: ${LIMIT:-inconnue}"
+  echo "KO: le problème n'est pas résolu durablement"
   exit 1
 fi

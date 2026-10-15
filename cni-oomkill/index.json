@@ -1,8 +1,8 @@
 {
-  "title": "Réseau instable : le CNI redémarre en boucle",
-  "description": "Des coupures réseau aléatoires touchent tout le nœud. Trouve pourquoi et corrige.",
+  "title": "Coupures réseau intermittentes",
+  "description": "Des erreurs réseau aléatoires touchent plusieurs services. Trouve pourquoi et corrige durablement.",
   "difficulty": "advanced",
-  "tags": ["kubernetes", "networking", "cni", "troubleshooting"],
+  "tags": ["kubernetes", "networking", "troubleshooting"],
   "details": {
     "intro": {
       "text": "intro.md",
@@ -10,7 +10,7 @@
     },
     "steps": [
       {
-        "title": "Trouver la cause des coupures réseau",
+        "title": "Résoudre l'incident",
         "text": "step1.md",
         "verify": "verify.sh"
       }
