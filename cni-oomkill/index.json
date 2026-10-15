@@ -1,0 +1,25 @@
+{
+  "title": "Réseau instable : le CNI redémarre en boucle",
+  "description": "Des coupures réseau aléatoires touchent tout le nœud. Trouve pourquoi et corrige.",
+  "difficulty": "advanced",
+  "tags": ["kubernetes", "networking", "cni", "troubleshooting"],
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Trouver la cause des coupures réseau",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

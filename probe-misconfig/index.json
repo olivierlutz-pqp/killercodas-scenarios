@@ -1,0 +1,25 @@
+{
+  "title": "Pod en CrashLoopBackOff alors que l'appli va bien",
+  "description": "Un déploiement redémarre en boucle après une mise à jour, sans erreur applicative visible.",
+  "difficulty": "beginner",
+  "tags": ["kubernetes", "probes", "troubleshooting"],
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Trouver pourquoi le pod redémarre",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

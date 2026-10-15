@@ -1,0 +1,25 @@
+{
+  "title": "Résolution DNS intermittente dans le cluster",
+  "description": "Certains pods n'arrivent à résoudre des noms qu'une fois sur deux, sans lien évident entre eux.",
+  "difficulty": "advanced",
+  "tags": ["kubernetes", "coredns", "dns", "troubleshooting"],
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Stabiliser la résolution DNS",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "ImagePullBackOff sur un registry privé",
+  "description": "Un déploiement ne démarre jamais, bloqué en ImagePullBackOff.",
+  "difficulty": "beginner",
+  "tags": ["kubernetes", "registry", "secrets", "troubleshooting"],
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Débloquer le pull de l'image",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
